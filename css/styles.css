@@ -1,0 +1,450 @@
+/* Paleta Institucional extraída del Logo Mavir School */
+:root {
+    --mavir-blue-dark: #003B70;
+    --mavir-blue: #004B87;
+    --mavir-orange: #F39200;
+    --mavir-orange-light: #FF9E1B;
+    --bg-light: #F4F7FA;
+    --text-dark: #1E293B;
+    --text-muted: #64748B;
+    --card-bg: #FFFFFF;
+    --shadow: 0 4px 15px rgba(0, 59, 112, 0.08);
+    --border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: #FAFCFE;
+}
+
+/* Navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 59, 112, 0.96);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    padding: 1rem 0;
+    border-bottom: 3px solid var(--mavir-orange);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--mavir-orange);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #E2E8F0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--mavir-orange);
+}
+
+.btn-nav {
+    background: var(--mavir-orange);
+    color: #FFF !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--mavir-blue-dark) 0%, var(--mavir-blue) 100%);
+    color: #FFF;
+    padding: 8rem 2rem 5rem 2rem;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.badge {
+    background: rgba(243, 146, 0, 0.2);
+    color: var(--mavir-orange-light);
+    border: 1px solid var(--mavir-orange);
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0.8rem 0 0.3rem 0;
+}
+
+.hero-text h2 {
+    font-size: 1.3rem;
+    color: var(--mavir-orange-light);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    color: #CBD5E1;
+    max-width: 720px;
+    margin-bottom: 1.8rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Botones */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--mavir-orange);
+    color: #FFF;
+}
+
+.btn-accent {
+    background: var(--mavir-orange);
+    color: #FFF;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.15);
+    color: #FFF;
+}
+
+/* Métricas Hero */
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--mavir-orange-light);
+    margin-bottom: 0.5rem;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stat-card p {
+    font-size: 0.85rem;
+    color: #94A3B8;
+}
+
+/* Secciones */
+.section {
+    padding: 5rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--mavir-blue-dark);
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+}
+
+/* Propuesta de Valor */
+.about-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    border-left: 5px solid var(--mavir-orange);
+}
+
+/* Procesos Grid */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.process-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border-top: 3px solid var(--mavir-blue);
+    transition: transform 0.3s;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--mavir-orange);
+}
+
+.process-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 75, 135, 0.1);
+    color: var(--mavir-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.process-card h3 {
+    font-size: 1.1rem;
+    color: var(--mavir-blue-dark);
+    margin-bottom: 0.8rem;
+}
+
+.process-card p {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+/* Simulador */
+.simulator-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 1.2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.simulator-controls select {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #CBD5E1;
+}
+
+.simulator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.chart-card, .table-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.chart-card h3, .table-card h3 {
+    font-size: 1.1rem;
+    color: var(--mavir-blue-dark);
+    margin-bottom: 1rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+th {
+    background-color: #F1F5F9;
+    color: var(--mavir-blue-dark);
+}
+
+/* Badges */
+.badge-status {
+    padding: 0.25rem 0.65rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-status.conciliado { background: #D1FAE5; color: #065F46; }
+.badge-status.pendiente { background: #FEF3C7; color: #92400E; }
+.badge-status.mora { background: #FEE2E2; color: #991B1B; }
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: #CBD5E1;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+}
+
+.timeline-item {
+    padding: 10px 0 30px 50px;
+    position: relative;
+}
+
+.timeline-dot {
+    height: 16px;
+    width: 16px;
+    background: var(--mavir-orange);
+    border: 3px solid var(--mavir-blue-dark);
+    border-radius: 50%;
+    position: absolute;
+    left: 14px;
+    top: 15px;
+    z-index: 1;
+}
+
+.timeline-content {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.timeline-content .date {
+    font-size: 0.8rem;
+    color: var(--mavir-orange);
+    font-weight: 700;
+}
+
+.timeline-content h3 {
+    font-size: 1.1rem;
+    color: var(--mavir-blue-dark);
+}
+
+.timeline-content h4 {
+    font-size: 0.95rem;
+    color: var(--mavir-blue);
+    margin-bottom: 0.8rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--mavir-blue-dark);
+    color: #FFF;
+    padding: 4rem 2rem 2rem 2rem;
+    text-align: center;
+    border-top: 4px solid var(--mavir-orange);
+}
+
+.footer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: #94A3B8;
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #64748B;
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-text h1 { font-size: 2rem; }
+    .hero-buttons { flex-direction: column; }
+    .simulator-grid { grid-template-columns: 1fr; }
+}

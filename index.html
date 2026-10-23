@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeiny González | Analista de Cobranza y Aplicación de Pagos - Mavir School</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js para simulador de cobranzas -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">YG<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Propuesta</a></li>
+                <li><a href="#processes">Procesos Clave</a></li>
+                <li><a href="#simulator">Simulador de Conciliación</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#contact" class="btn-nav">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="badge">Gestión Financiera & Atencíón EdTech Virtual</span>
+                <h1>Yeiny Karine González Cifuentes</h1>
+                <h2>Analista de Cobranza, Conciliaciones y Aplicación de Pagos</h2>
+                <p>Especialista en conciliación bancaria, atención asertiva a padres de familia, aplicación de abonos, facturación y gestión preventiva de cobranza para instituciones educativas virtuales.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#simulator" class="btn btn-primary"><i class="fa-solid fa-calculator"></i> Ver Simulador de Pagos</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i> Contactar</a>
+                </div>
+            </div>
+
+            <!-- Métricas Destacadas -->
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <i class="fa-solid fa-check-double"></i>
+                    <h3>98%</h3>
+                    <p>Precisión en Conciliación Bancaria</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-chart-line-down"></i>
+                    <h3>20%</h3>
+                    <p>Reducción de Morosidad en Cartera</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h3>> 85%</h3>
+                    <p>Satisfacción del Cliente (CSAT)</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Propuesta de Valor -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Propuesta de Valor para Mavir School</h2>
+            <div class="about-card">
+                <p>Aporto más de 9 años de experiencia integrando la **gestión financiera de recaudación** con la **atención personalizada al cliente** en el sector educativo. Mi perfil combina una comunicación empática y negociación asertiva para la atención a padres de familia vía chat y teléfono, con el rigor técnico requerido para la conciliación de abonos, control de facturación, auditoría de comprobantes y manejo de sistemas ERP/CRM y Excel avanzado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demostración de Procesos Solicitados por Mavir School -->
+    <section id="processes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Dominio Operativo de Procesos Requeridos</h2>
+            <p class="section-subtitle">Alineación directa con las funciones especificadas en la vacante de Mavir School.</p>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Atención a Padres y Comunicación Asertiva</h3>
+                    <p>Atención fluida por canales digitales (chat/teléfono), escuchando inquietudes de pagos, orientando en la emisión de comprobantes y ofreciendo soluciones de pago con inteligencia emocional.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <h3>Gestión de Cobranza Telefónica Preventiva</h3>
+                    <p>Ejecución de llamadas de seguimiento de cartera, establecimiento de compromisos de pago claros y acuerdos con padres de alumnos, orientados a reducir la morosidad voluntaria.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>Conciliaciones Bancarias y Aplicación</h3>
+                    <p>Cruce riguroso de extractos bancarios con comprobantes de transferencias enviados por los tutores, asegurando la aplicación exacta del abono a la cuenta del estudiante.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon"><i class="fa-solid fa-receipt"></i></div>
+                    <h3>Manejo Documental y Facturación</h3>
+                    <p>Validación de comprobantes, organización de expedientes de matrícula y emisión de boletas/facturas electrónicas en conformidad con los reglamentos institucionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulador Interactivo de Pagos y Conciliación -->
+    <section id="simulator" class="section">
+        <div class="container">
+            <h2 class="section-title">Simulador de Conciliación Bancaria y Aplicación de Pagos</h2>
+            <p class="section-subtitle">Módulo interactivo para demostrar el procesamiento de abonos de colegiaturas y seguimiento de cuotas pendietes.</p>
+
+            <div class="simulator-controls">
+                <div class="control-group">
+                    <label for="statusFilter"><i class="fa-solid fa-filter"></i> Estado de Cuenta:</label>
+                    <select id="statusFilter">
+                        <option value="all">Todos los Padres de Familia</option>
+                        <option value="conciliado">Pagos Conciliados (Al Día)</option>
+                        <option value="pendiente">Abono Pendiente de Aplicar</option>
+                        <option value="mora">En Morosidad (Requiere Gestión)</option>
+                    </select>
+                </div>
+                <button id="btnProcessPayment" class="btn btn-accent"><i class="fa-solid fa-plus-circle"></i> Simular Registro de Abono</button>
+            </div>
+
+            <div class="simulator-grid">
+                <div class="chart-card">
+                    <h3>Estado de Recaudación Mensual de Colegiaturas</h3>
+                    <canvas id="chartRecaudacion"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Distribución de Cartera por Estado de Pago</h3>
+                    <canvas id="chartCartera"></canvas>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <h3>Consola de Control de Cobranzas Mavir School</h3>
+                <div class="table-responsive">
+                    <table id="paymentsTable">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Alumno / Padre de Familia</th>
+                                <th>Concepto</th>
+                                <th>Monto (S/.)</th>
+                                <th>Estado de Pago</th>
+                                <th>Acción Recomendada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Se carga con JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Profesional -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Trayectoria Profesional Relevante</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Abril 2014 - Noviembre 2014</span>
+                        <h3>Coordinadora de Cobranzas y Control de Pagos</h3>
+                        <h4>Municipalidad de San Martín de Porres</h4>
+                        <ul>
+                            <li>Conciliación de cuentas y aplicación de abonos con un **98% de precisión**.</li>
+                            <li>Llamadas de seguimiento y negociación que lograron **reducir la morosidad en 20%**.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Abril 2017 - Enero 2026</span>
+                        <h3>Líder de Proyecto y Experiencia del Cliente (Sector EdTech)</h3>
+                        <h4>Educaria Perú</h4>
+                        <ul>
+                            <li>Atención y comunicación continua con usuarios de instituciones educativas.</li>
+                            <li>Administración de plataformas escolares (Alexia SIS) y retención del 70% de usuarios.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Mayo 2026 - Septiembre 2026</span>
+                        <h3>Analista de Operaciones B2B y Contratos</h3>
+                        <h4>Empresa de Telecomunicaciones de Bogotá (ETB)</h4>
+                        <ul>
+                            <li>Validación documental y atención de requerimientos de clientes mediante SAP y Salesforce.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>¿Lista para unirme al equipo?</h2>
+            <p>Disponible para coordinar una entrevista sobre cómo optimizar la conciliación de pagos y la atención a padres de familia.</p>
+            <div class="contact-links">
+                <a href="https://wa.me/51964310280" target="_blank" class="btn btn-accent"><i class="fa-brands fa-whatsapp"></i> WhatsApp: +51 964 310 280</a>
+                <a href="mailto:ykgonzalez01@gmail.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> ykgonzalez01@gmail.com</a>
+            </div>
+            <p class="copyright">&copy; 2026 Yeiny Karine González Cifuentes.</p>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
